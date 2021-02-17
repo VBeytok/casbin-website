@@ -18,6 +18,8 @@ jobs:
         CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
         CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
       with:
+        debug_mode: true
+      
         upload_sources: true
         download_translations: true
         config: ./crowdin_gh.yaml
